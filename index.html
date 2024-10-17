@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf Vural Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: rgba(51, 51, 51, 0.8); /* Koyu gri, yarı saydam */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Yusuf Vural Blog</h1>
+    <nav>
+        <a href="#anasayfa">Anasayfa</a>
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#anket">Anketler</a>
+        <a href="#iletisim">İletişim</a>
+    </nav>
+</header>
+
+<section id="anasayfa">
+    <h2>Anasayfa</h2>
+    <p>Hoş geldiniz! Bu blogda hayatım, deneyimlerim ve düşüncelerim hakkında yazılar bulacaksınız.</p>
+</section>
+
+<section id="hakkimda">
+    <h2>Hakkımda</h2>
+    <p>Ben Yusuf Vural. 20 yaşındayım. Düzce Üniversitesi Bilgisayar Mühendisliği bölümünde okuyorum. Hobilerim; doğa yürüyüşü, bisiklet sürmek, spor yapma, kitap okuma ve origami yapma. Bu blog sayfasını kurma amacım sizler ile fikir alışverişi yapmaktır.</p>
+</section>
+
+<section id="anket">
+    <h2>Anketler</h2>
+    
+    <form action="submit_form.php" method="post">
+        <p>Hayatınızı en çok etkileyen olay hangisidir?</p>
+        <label>
+            <input type="radio" name="event" value="1"> Başarılarım
+        </label><br>
+        <label>
+            <input type="radio" name="event" value="2"> Zorluklarım
+        </label><br>
+        <label>
+            <input type="radio" name="event" value="3"> İlham Veren Anılarım
+        </label><br><br>
+
+        <label for="feedback">Eklemek istediğiniz bir yorum:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Gönder">
+    </form>
+
+    <form action="submit_form.php" method="post" style="margin-top: 40px;">
+        <p>En sevdiğiniz film hangisidir?</p>
+        <label>
+            <input type="radio" name="film" value="yuzuklerin_efendisi"> Yüzüklerin Efendisi
+        </label><br>
+        <label>
+            <input type="radio" name="film" value="harry_potter"> Harry Potter
+        </label><br>
+        <label>
+            <input type="radio" name="film" value="esaretin_bedeli"> Esaretin Bedeli
+        </label><br><br>
+
+        <label for="film_feedback">Eklemek istediğiniz bir yorum:</label><br>
+        <textarea id="film_feedback" name="film_feedback" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Gönder">
+    </form>
+
+    <form action="submit_form.php" method="post" style="margin-top: 40px;">
+        <p>Hangi dili kullanmayı tercih edersiniz?</p>
+        <label>
+            <input type="radio" name="language" value="Java"> Java
+        </label><br>
+        <label>
+            <input type="radio" name="language" value="Python"> Python
+        </label><br>
+        <label>
+            <input type="radio" name="language" value="C++"> C++
+        </label><br><br>
+
+        <label for="language_feedback">Eklemek istediğiniz bir yorum:</label><br>
+        <textarea id="language_feedback" name="language_feedback" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Gönder">
+    </form>
+</section>
+
+<section id="iletisim">
+    <h2>İletişim</h2>
+    <p>Bana ulaşmak isterseniz, <a href="mailto:ornek@example.com">yusufvrl12@example.com</a> adresine e-posta gönderebilirsiniz.</p>
+</section>
+
+</body>
+</html>
